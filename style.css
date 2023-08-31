@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+	--font-family: 'Poppins', sans-serif;
+	--color-title: #000336;
+	--color-btn: #0F1B4C;
+	--color-sky: #0689FF;
+	--color-text: #5A6473
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: var(--font-family);
+}
+ul,
+ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img,
+svg{
+	display: block;
+}
+/* .vh{
+	height: 100vh;
+} */
+.container{
+	width: 100%;
+	max-width: 1140px;
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+
+/* Buttons Style Start */
+.btn{
+	display: inline-block;
+	padding: 15px 35px;
+	background-color: var(--color-btn);
+	font-size: 13px;
+	font-weight: 400;
+	color: #ffffff;
+	border-radius: 12px;
+}
+.text-btn{
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--color-sky);
+	padding: 5px;
+}
+/* Buttons Style End */
+
+/*  Section Header Start */
+
+.section-header__title{
+	font-size: 35px;
+	font-weight: 600;
+	color: var(--color-title);
+	margin-block-end: 20px;
+}
+.section-header__title--topbar::before{
+	content: '';
+	display: block;
+	width: 41px;
+	height: 4px;
+	background-color: var(--color-title);
+	border-radius: 12px;
+	margin-block-end: 10px;
+}
+.section-header__text{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	color: var(--color-text);
+}
+.section-header--center{
+	text-align: center;
+}
+.section-header--center .section-header__title--topbar::before{
+	margin-inline: auto;
+}
+
+/*  Section Header End */
+
+/* Header Section Start */
+.header{
+	padding-block: 38px;
+	position: fixed;
+	width: 100%;
+	background-color: #E6F0FF;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+}
+.navbar__logo{
+	margin-inline-end: 50px;
+}
+.navbar__nav,
+.navbar__actions
+{
+	display: flex;
+}
+.navbar__nav__link{
+	font-size: 14px;
+	font-weight: 500;
+	display: inline-block;
+	padding: 15px;
+}
+.navbar__nav .navbar__nav__link{
+	color: #4F5361;
+}
+.navbar__actions .navbar__nav__link{
+	color: var(--color-btn);
+}
+
+.navbar__actions{
+	margin-inline-start: auto;
+}
+/* Header Section End */
+
+/* Banner Section Start */
+.banner{
+	width: 100%;
+	padding-block-start: 155px;
+	background-color: #E6F0FF;
+}
+.banner__row{
+	display: flex;
+	align-items: center;
+}
+.banner__row__left{
+	flex-basis: 56%;								/*New Code*/
+	flex-shrink: 0;									/*New Code*/
+}
+.banner__image{
+	width: 114%;									/*Fixes image size*/
+}
+/* .banner__row__right{
+	width:40%;
+} */
+.banner__sub-title{
+	color: #687690;
+	font-size: 18px;
+	font-weight: 500;
+	margin-block-end: 8px;
+}
+.banner__title{
+	color: var(--color-title);
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 76px;
+	margin-block-end: 30px;
+}
+.banner__text{
+	color: var(--color-text);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 32px;
+	margin-block-end: 40px;
+	max-width: 90%;
+}
+/* Banner Section End */
+
+/* Review Section start */
+.review{
+	padding-block-start: 120px;
+	padding-block-end: 80px;
+}
+.review__top{
+	display: flex;
+	justify-content: space-between;
+}
+.review__logo{
+	display: inline-block;
+}
+.review__icons{
+	font-size: 19px;
+	color: #FFCA56;
+	display: flex;
+	justify-content: flex-end;								/*New Code*/
+}
+.review__text{
+	margin-block-start: 20px;
+	color: #7D8589;
+	font-size: 16px;
+	font-weight: 500;
+}
+.review__bottom{
+	margin-block-start: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.review__card{
+	display: grid;										/*New Code*/
+	place-items: center;								/*New Code*/
+	width: 200px;
+	height: 80px;
+	border-radius: 12px;
+	background-color: #ffffff;
+	transition: box-shadow linear 0.3s;
+	
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+}
+.review__card:hover{
+	box-shadow: 0 45px 80px rgba(0, 0, 0, 0.07);
+}
+/* Banner Section End */
+
+/* Works Section Start */
+.works{
+	padding-block: 80px;
+}
+.works .section-header{
+	margin-block-end: 70px;
+}
+.works__row{
+	margin-block-end: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.works__card{
+	text-align: center;
+}
+.works__card__image{
+	margin-inline: auto;
+}
+.works__card__title{
+	font-size: 20px;
+	font-weight: 500;
+	color: #3B3C45;
+	margin-block-start: 26px;
+	margin-block-end: 10px;
+}
+.text-center{
+	text-align: center;
+}
+
+/* Works Section End */
